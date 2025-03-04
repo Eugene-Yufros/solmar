@@ -1,0 +1,40 @@
+.products-section {
+    margin-bottom: toRem(80);
+}
+
+.head-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .title {
+        font-size: toRem(48);
+    }
+
+    .link-head {
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+}
+
+.title {}
+
+.list-products {}
+
+.item-product {}
+
+.image-holder {}
+
+.image-default {}
+
+.image-hover {}
+
+.list-labels {}
+
+.label {}
+
+.button-favorite {}
+
+.svg-icon {}
+
+.icon-heart {}

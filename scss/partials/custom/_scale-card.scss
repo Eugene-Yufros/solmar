@@ -1,0 +1,35 @@
+.item-card {
+    position: relative;
+    overflow: clip;
+
+    &:hover {
+        .image {
+            transform: scale(1.1);
+        }
+
+        .button {
+            transform: translate(20px, -20px);
+        }
+    }
+
+    .image {
+        max-width: 100%;
+        object-fit: cover;
+        transition: 0.3s;
+        aspect-ratio: 369.95/499.92;
+    }
+}
+
+.link-item {}
+
+.button {
+    position: absolute;
+    left: toRem(16);
+    bottom: toRem(16);
+    padding: toRem(10) toRem(36);
+    opacity: 0.8;
+    font-weight: 700;
+    font-size: toRem(14);
+    background-color: #ffffffc8;
+    transition: 0.3s;
+}

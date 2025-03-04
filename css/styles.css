@@ -74,6 +74,65 @@ textarea {
           appearance: none;
 }
 
+.item-card {
+  position: relative;
+  overflow: clip;
+}
+.item-card:hover .image {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.item-card:hover .button {
+  -webkit-transform: translate(20px, -20px);
+      -ms-transform: translate(20px, -20px);
+          transform: translate(20px, -20px);
+}
+.item-card .image {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  aspect-ratio: 369.95/499.92;
+}
+
+.button {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  padding: 0.625rem 2.25rem;
+  opacity: 0.8;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-color: rgba(255, 255, 255, 0.7843137255);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.products-section {
+  margin-bottom: 5rem;
+}
+
+.head-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.head-products .title {
+  font-size: 3rem;
+}
+.head-products .link-head {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
 @media (max-width: 1000px) {
   html {
     font-size: 90%;
@@ -116,13 +175,14 @@ body {
 }
 
 [class*=container] {
-  max-width: 73.125rem;
+  max-width: 76.875rem;
   margin: 0 auto;
   padding: 0 1.875rem;
 }
 
 [class*=title] {
   font-family: "Playfair Display", serif;
+  font-weight: 500;
 }
 
 .banners-section {
@@ -161,4 +221,32 @@ body {
 
 .banner-holder {
   position: relative;
+}
+
+.categories-section {
+  margin-bottom: 5rem;
+}
+
+.list-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+}
+@media (max-width: 769px) {
+  .list-categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .list-categories {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.tiny {
+  font-weight: 200;
 }

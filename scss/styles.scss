@@ -1,6 +1,8 @@
-@import "reset";
-@import "variables";
-@import "mixins";
+@import "partials/default/reset";
+@import "partials/default/mixins";
+@import "partials/default/variables";
+@import "partials/custom/scale-card";
+@import "partials/custom/product-card";
 
 html {
     @media (max-width: 1000px) {
@@ -36,13 +38,14 @@ body {
 }
 
 [class*="container"] {
-    max-width: toRem($containerWidth);
+    max-width: toRem($containerWidth + 60);
     margin: 0 auto;
     padding: 0 toRem(30);
 }
 
 [class*="title"] {
     font-family: "Playfair Display", serif;
+    font-weight: 500;
 }
 
 .banners-section {
@@ -83,4 +86,30 @@ body {
 
 .banner-holder {
     position: relative;
+}
+
+.categories-section {
+    margin-bottom: toRem(80);
+}
+
+.list-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: toRem(30);
+
+    @media (max-width: 769px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.italic {
+    font-style: italic;
+}
+
+.tiny {
+    font-weight: 200;
 }
