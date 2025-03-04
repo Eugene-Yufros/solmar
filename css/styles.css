@@ -124,3 +124,41 @@ body {
 [class*=title] {
   font-family: "Playfair Display", serif;
 }
+
+.banners-section {
+  margin: 5rem 0;
+}
+.banners-section .image-banner {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banners-section .button-banner {
+  position: absolute;
+  top: 50%;
+}
+.banners-section .button-banner:hover .slider-next {
+  fill: #BDBDBD;
+}
+.banners-section .button-left {
+  left: 0.625rem;
+  -webkit-transform: rotate(180deg) translateY(50%);
+      -ms-transform: rotate(180deg) translateY(50%);
+          transform: rotate(180deg) translateY(50%);
+}
+.banners-section .button-right {
+  right: 0.625rem;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.banners-section .slider-next {
+  color: currentColor;
+  fill: #FFFFFF;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.banner-holder {
+  position: relative;
+}

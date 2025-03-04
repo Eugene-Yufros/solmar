@@ -44,3 +44,43 @@ body {
 [class*="title"] {
     font-family: "Playfair Display", serif;
 }
+
+.banners-section {
+    margin: toRem(80) 0;
+
+    .image-banner {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .button-banner {
+        position: absolute;
+        top: 50%;
+
+        &:hover {
+            .slider-next {
+                fill: $grayColor;
+            }
+        }
+    }
+
+    .button-left {
+        left: toRem(10);
+        transform: rotate(180deg) translateY(50%);
+    }
+
+    .button-right {
+        right: toRem(10);
+        transform: translateY(-50%);
+    }
+
+    .slider-next {
+        color: currentColor;
+        fill: $whiteColor;
+        transition: fill 0.2s;
+    }
+}
+
+.banner-holder {
+    position: relative;
+}
