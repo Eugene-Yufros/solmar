@@ -218,18 +218,24 @@ textarea {
   cursor: pointer;
   border-bottom: 2px solid #000;
 }
+@media (max-width: 1000px) {
+  .burger-button {
+    display: block;
+  }
+}
 
+.active-burger .burger-menu::after {
+  display: block;
+}
 .active-burger .burger-button {
   border-bottom: none;
 }
-
 .active-burger .burger-button::before {
   top: 50%;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-
 .active-burger .burger-button::after {
   top: 50%;
   -webkit-transform: rotate(-45deg);
@@ -258,11 +264,6 @@ textarea {
   left: 0;
 }
 
-@media (max-width: 1000px) {
-  .burger-button {
-    display: block;
-  }
-}
 .burger-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,6 +315,7 @@ textarea {
 }
 
 .burger-menu::after {
+  display: none;
   content: "";
   position: absolute;
   left: 100%;
