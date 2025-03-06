@@ -16,7 +16,75 @@
 
 <body>
     <div class="wrapper">
-        <header></header>
+        <header class="header">
+            <div class="header-container">
+                <nav class="nav">
+                    <a href="#" class="logo-link">
+                        <img src="images/icons/landscape.svg" alt="">
+                    </a>
+                    <ul class="list-nav">
+                        <li class="item-nav">
+                            <a href="#">Головна</a>
+                        </li>
+                        <li class="item-nav item-dropdown">
+                            <a href="#">Категорії</a>
+                            <ul class="menu-dropdown">
+                                <li class="item-menu">
+                                    <a href="#">Посилання 1</a>
+                                </li>
+                                <li class="item-menu">
+                                    <a href="#">Посилання 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item-nav">
+                            <a href="#">Наші переваги</a>
+                        </li>
+                    </ul>
+                    <form class="search-form" action="#" method="get">
+                        <div class="search-block">
+                            <input class="search-input" type="search" name="search" id="search" placeholder="Я Шукаю..."
+                                autocomplete="off">
+                        </div>
+                    </form>
+                    <div class="contact-call">
+                        <a class="call-link" href="tel:+380123456789">
+                            <span class="call-phone">
+                                +380123456789
+                            </span>
+                        </a>
+                    </div>
+                    <button class="burger-button" type="button">
+                    </button>
+                    <div class="burger-menu">
+                        <ul class="list-nav">
+                            <li class="item-nav">
+                                <a href="#">Головна</a>
+                            </li>
+                            <li class="item-nav">
+                                <a href="#">Категорії</a>
+                            </li>
+                            <li class="item-nav">
+                                <a href="#">Наші переваги</a>
+                            </li>
+                        </ul>
+                        <form class="search-form" action="#" method="get">
+                            <div class="search-block">
+                                <input class="search-input" type="search" name="search" id="search"
+                                    placeholder="Я Шукаю..." autocomplete="off">
+                            </div>
+                        </form>
+                        <div class="contact-call">
+                            <a class="call-link" href="tel:+380123456789">
+                                <span class="call-phone">
+                                    +380123456789
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
         <main>
             <section class="banners-section">
                 <div class="container-banners">
@@ -100,7 +168,7 @@
                             Наші <span class="italic">новинки</span>
                         </h2>
                         <a class="link-head" href="#">
-                            <span>Дивитися все</span>
+                            <span class="text-link-head">Дивитися все</span>
                             <svg class="svg-icon arrow-right" viewBox="0 0 32 32" width="3.2rem" height="3.2rem">
                                 <use xlink:href="images/icons/svg-sprite/main.svg#arrow-right">
                                 </use>
@@ -109,10 +177,12 @@
                     </div>
                     <ul class="list-products">
                         <li class="item-product">
-                            <a href="#">
+                            <a class="link-item-product" href="#">
                                 <div class="image-holder">
-                                    <img class="image-default" src="images/content/newest/1/default.webp" alt="">
-                                    <img class="image-hover" src="images/content/newest/1/hover.webp" alt="">
+                                    <img class="image-product image-default" src="images/content/newest/1/default.webp"
+                                        alt="">
+                                    <img class="image-product image-hover" src="images/content/newest/1/hover.webp"
+                                        alt="">
                                     <ul class="list-labels">
                                         <li class="label">
                                             Новинка
@@ -126,6 +196,435 @@
                                         </svg>
                                     </button>
                                 </div>
+                                <div class="details-procuts">
+                                    <h3 class="title">
+                                        Спідниця-шорти в смужку кольору якогось там кольору хз
+                                    </h3>
+                                    <div class="colors-buttons">
+                                        <button class="color-button" title="Зелений">
+
+                                        </button>
+                                        <button class="color-button" title="Червоний">
+
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        1 299 грн.
+                                    </div>
+                                </div>
+                                <div class="cta-block">
+                                    <div class="buttons-sizes">
+                                        <button class="button-size">
+                                            44
+                                        </button>
+                                        <button class="button-size">
+                                            45
+                                        </button>
+                                        <button class="button-size">
+                                            46
+                                        </button>
+                                    </div>
+                                    <button class="button-buy">
+                                        Купити
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-product">
+                            <a class="link-item-product" href="#">
+                                <div class="image-holder">
+                                    <img class="image-product image-default" src="images/content/newest/2/default.webp"
+                                        alt="">
+                                    <img class="image-product image-hover" src="images/content/newest/2/hover.webp"
+                                        alt="">
+                                    <ul class="list-labels">
+                                        <li class="label">
+                                            Новинка
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button-favorite">
+                                        <svg class="svg-icon icon-heart" viewBox="0 0 16 27" width="1.6rem"
+                                            height="2.7rem">
+                                            <use xlink:href="images/icons/svg-sprite/main.svg#heart">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="details-procuts">
+                                    <h3 class="title">
+                                        Спідниця-шорти в смужку кольору якогось там кольору хз
+                                    </h3>
+                                    <div class="colors-buttons">
+                                        <button class="color-button" title="Зелений">
+
+                                        </button>
+                                        <button class="color-button" title="Червоний">
+
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        1 299 грн.
+                                    </div>
+                                </div>
+                                <div class="cta-block">
+                                    <div class="buttons-sizes">
+                                        <button class="button-size">
+                                            44
+                                        </button>
+                                        <button class="button-size">
+                                            45
+                                        </button>
+                                        <button class="button-size">
+                                            46
+                                        </button>
+                                    </div>
+                                    <button class="button-buy">
+                                        Купити
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-product">
+                            <a class="link-item-product" href="#">
+                                <div class="image-holder">
+                                    <img class="image-product image-default" src="images/content/newest/3/default.webp"
+                                        alt="">
+                                    <img class="image-product image-hover" src="images/content/newest/3/hover.webp"
+                                        alt="">
+                                    <ul class="list-labels">
+                                        <li class="label">
+                                            Новинка
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button-favorite">
+                                        <svg class="svg-icon icon-heart" viewBox="0 0 16 27" width="1.6rem"
+                                            height="2.7rem">
+                                            <use xlink:href="images/icons/svg-sprite/main.svg#heart">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="details-procuts">
+                                    <h3 class="title">
+                                        Спідниця-шорти в смужку кольору якогось там кольору хз
+                                    </h3>
+                                    <div class="colors-buttons">
+                                        <button class="color-button" title="Зелений">
+
+                                        </button>
+                                        <button class="color-button" title="Червоний">
+
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        1 299 грн.
+                                    </div>
+                                </div>
+                                <div class="cta-block">
+                                    <div class="buttons-sizes">
+                                        <button class="button-size">
+                                            44
+                                        </button>
+                                        <button class="button-size">
+                                            45
+                                        </button>
+                                        <button class="button-size">
+                                            46
+                                        </button>
+                                    </div>
+                                    <button class="button-buy">
+                                        Купити
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-product">
+                            <a class="link-item-product" href="#">
+                                <div class="image-holder">
+                                    <img class="image-product image-default" src="images/content/newest/4/default.webp"
+                                        alt="">
+                                    <img class="image-product image-hover" src="images/content/newest/4/hover.webp"
+                                        alt="">
+                                    <ul class="list-labels">
+                                        <li class="label">
+                                            Новинка
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button-favorite">
+                                        <svg class="svg-icon icon-heart" viewBox="0 0 16 27" width="1.6rem"
+                                            height="2.7rem">
+                                            <use xlink:href="images/icons/svg-sprite/main.svg#heart">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="details-procuts">
+                                    <h3 class="title">
+                                        Спідниця-шорти в смужку кольору якогось там кольору хз
+                                    </h3>
+                                    <div class="colors-buttons">
+                                        <button class="color-button" title="Зелений">
+
+                                        </button>
+                                        <button class="color-button" title="Червоний">
+
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        1 299 грн.
+                                    </div>
+                                </div>
+                                <div class="cta-block">
+                                    <div class="buttons-sizes">
+                                        <button class="button-size">
+                                            44
+                                        </button>
+                                        <button class="button-size">
+                                            45
+                                        </button>
+                                        <button class="button-size">
+                                            46
+                                        </button>
+                                    </div>
+                                    <button class="button-buy">
+                                        Купити
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="products-section--modified">
+                <div class="container-products">
+                    <div class="head-products">
+                        <h2 class="title">
+                            Наші <span class="italic">новинки</span>
+                        </h2>
+                        <a class="link-head" href="#">
+                            <span class="text-link-head">Дивитися все</span>
+                            <svg class="svg-icon arrow-right" viewBox="0 0 32 32" width="3.2rem" height="3.2rem">
+                                <use xlink:href="images/icons/svg-sprite/main.svg#arrow-right">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="list-products">
+                        <li class="item-product">
+                            <a class="link-item-product" href="#">
+                                <div class="image-holder">
+                                    <img class="image-product image-default" src="images/content/newest/1/default.webp"
+                                        alt="">
+                                    <img class="image-product image-hover" src="images/content/newest/1/hover.webp"
+                                        alt="">
+                                    <ul class="list-labels">
+                                        <li class="label">
+                                            Новинка
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button-favorite">
+                                        <svg class="svg-icon icon-heart" viewBox="0 0 16 27" width="1.6rem"
+                                            height="2.7rem">
+                                            <use xlink:href="images/icons/svg-sprite/main.svg#heart">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="details-procuts">
+                                    <h3 class="title">
+                                        Спідниця-шорти в смужку кольору якогось там кольору хз
+                                    </h3>
+                                    <div class="colors-buttons">
+                                        <button class="color-button" title="Зелений">
+
+                                        </button>
+                                        <button class="color-button" title="Червоний">
+
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        1 299 грн.
+                                    </div>
+                                </div>
+                                <div class="cta-block">
+                                    <div class="buttons-sizes">
+                                        <button class="button-size">
+                                            44
+                                        </button>
+                                        <button class="button-size">
+                                            45
+                                        </button>
+                                        <button class="button-size">
+                                            46
+                                        </button>
+                                    </div>
+                                    <button class="button-buy">
+                                        Купити
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-product">
+                            <a class="link-item-product" href="#">
+                                <div class="image-holder">
+                                    <img class="image-product image-default" src="images/content/newest/2/default.webp"
+                                        alt="">
+                                    <img class="image-product image-hover" src="images/content/newest/2/hover.webp"
+                                        alt="">
+                                    <ul class="list-labels">
+                                        <li class="label">
+                                            Новинка
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button-favorite">
+                                        <svg class="svg-icon icon-heart" viewBox="0 0 16 27" width="1.6rem"
+                                            height="2.7rem">
+                                            <use xlink:href="images/icons/svg-sprite/main.svg#heart">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="details-procuts">
+                                    <h3 class="title">
+                                        Спідниця-шорти в смужку кольору якогось там кольору хз
+                                    </h3>
+                                    <div class="colors-buttons">
+                                        <button class="color-button" title="Зелений">
+
+                                        </button>
+                                        <button class="color-button" title="Червоний">
+
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        1 299 грн.
+                                    </div>
+                                </div>
+                                <div class="cta-block">
+                                    <div class="buttons-sizes">
+                                        <button class="button-size">
+                                            44
+                                        </button>
+                                        <button class="button-size">
+                                            45
+                                        </button>
+                                        <button class="button-size">
+                                            46
+                                        </button>
+                                    </div>
+                                    <button class="button-buy">
+                                        Купити
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-product">
+                            <a class="link-item-product" href="#">
+                                <div class="image-holder">
+                                    <img class="image-product image-default" src="images/content/newest/3/default.webp"
+                                        alt="">
+                                    <img class="image-product image-hover" src="images/content/newest/3/hover.webp"
+                                        alt="">
+                                    <ul class="list-labels">
+                                        <li class="label">
+                                            Новинка
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button-favorite">
+                                        <svg class="svg-icon icon-heart" viewBox="0 0 16 27" width="1.6rem"
+                                            height="2.7rem">
+                                            <use xlink:href="images/icons/svg-sprite/main.svg#heart">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="details-procuts">
+                                    <h3 class="title">
+                                        Спідниця-шорти в смужку кольору якогось там кольору хз
+                                    </h3>
+                                    <div class="colors-buttons">
+                                        <button class="color-button" title="Зелений">
+
+                                        </button>
+                                        <button class="color-button" title="Червоний">
+
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        1 299 грн.
+                                    </div>
+                                </div>
+                                <div class="cta-block">
+                                    <div class="buttons-sizes">
+                                        <button class="button-size">
+                                            44
+                                        </button>
+                                        <button class="button-size">
+                                            45
+                                        </button>
+                                        <button class="button-size">
+                                            46
+                                        </button>
+                                    </div>
+                                    <button class="button-buy">
+                                        Купити
+                                    </button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-product">
+                            <a class="link-item-product" href="#">
+                                <div class="image-holder">
+                                    <img class="image-product image-default" src="images/content/newest/4/default.webp"
+                                        alt="">
+                                    <img class="image-product image-hover" src="images/content/newest/4/hover.webp"
+                                        alt="">
+                                    <ul class="list-labels">
+                                        <li class="label">
+                                            Новинка
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="button-favorite">
+                                        <svg class="svg-icon icon-heart" viewBox="0 0 16 27" width="1.6rem"
+                                            height="2.7rem">
+                                            <use xlink:href="images/icons/svg-sprite/main.svg#heart">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="details-procuts">
+                                    <h3 class="title">
+                                        Спідниця-шорти в смужку кольору якогось там кольору хз
+                                    </h3>
+                                    <div class="colors-buttons">
+                                        <button class="color-button" title="Зелений">
+
+                                        </button>
+                                        <button class="color-button" title="Червоний">
+
+                                        </button>
+                                    </div>
+                                    <div class="price">
+                                        1 299 грн.
+                                    </div>
+                                </div>
+                                <div class="cta-block">
+                                    <div class="buttons-sizes">
+                                        <button class="button-size">
+                                            44
+                                        </button>
+                                        <button class="button-size">
+                                            45
+                                        </button>
+                                        <button class="button-size">
+                                            46
+                                        </button>
+                                    </div>
+                                    <button class="button-buy">
+                                        Купити
+                                    </button>
+                                </div>
                             </a>
                         </li>
                     </ul>
@@ -136,6 +635,8 @@
 
         </footer>
     </div>
+
+    <script src="scripts/sctipt.js"></script>
 
 </body>
 

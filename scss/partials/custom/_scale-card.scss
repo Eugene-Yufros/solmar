@@ -29,7 +29,7 @@
     padding: toRem(10) toRem(36);
     opacity: 0.8;
     font-weight: 700;
-    font-size: toRem(14);
+    font-size: clamp(14px, toRem(14), toRem(14));
     background-color: #ffffffc8;
     transition: 0.3s;
 }
